@@ -12,7 +12,7 @@ sudo apt install -y  git
 ```
 4. Run the following command to clone this repo in your VM
 ``` 
-git clone https://github.com/tanvirarafin/vlsi-cad.git
+git clone https://github.com/tanvirarafin/vlsi-cad
 ```
 5. Run the following commands in the terminal
 
