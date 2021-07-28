@@ -8,7 +8,7 @@ This repository contains basic scripts to install open source CAD tools.
 2. Create the Ubuntu VM with your favourite VM tool i.e., VirtualBox or VMeare Fusion
 3. Open up a terminal inside your freshly installed VM. Install git using the following command
 ```
-sudo apt install git
+sudo apt install -y  git
 ```
 4. Run the following command to clone this repo in your VM
 ``` 
