@@ -5,7 +5,7 @@ This repository contains basic scripts to install open source CAD tools.
 ## Steps to install the tools in your VM
 
 1. Download a fresh copy of Ubuntu 20.01.2.0 from here https://releases.ubuntu.com/20.04/
-2. Create the Ubuntu VM with your favourite VM tool i.e., VirtualBox or VMeare Fusion
+2. Create the Ubuntu VM with your favourite VM tool i.e., VirtualBox or VMeare Fusion. If possible use 30GB of harddrive.
 3. Open up a terminal inside your freshly installed VM. Install git using the following command
 ```
 sudo apt install -y  git
