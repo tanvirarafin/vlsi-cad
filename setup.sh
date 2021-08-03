@@ -14,8 +14,9 @@ git clone https://github.com/efabless/caravel_user_project.git
 git clone --recursive https://github.com/mattvenn/magic-inverter.git
 
 wget https://github.com/steveicarus/iverilog/archive/refs/tags/v11_0.tar.gz
-wget https://github.com/YosysHQ/fpga-toolchain/archive/refs/tags/nightly-20210727.tar.gz
 wget https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz
+wget https://github.com/YosysHQ/fpga-toolchain/releases/download/nightly-20210802/fpga-toolchain-linux_x86_64-nightly-20210802.tar.gz
+
 
 #install magic
 cd magic
@@ -57,7 +58,7 @@ cd /home/$USER
 
 pip3 install cocotb
 
-tar xf  nightly-20210727.tar.gz
+tar xf fpga-toolchain-linux_x86_64-nightly-20210802.tar.gz
 
 tar xf  riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz
 
