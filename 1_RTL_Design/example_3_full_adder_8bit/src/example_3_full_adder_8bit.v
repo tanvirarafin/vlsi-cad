@@ -23,6 +23,5 @@ module example_3_full_adder_8bit(clk, reset, a, b, cin, s, cout);
 	            cout <= temp[WIDTH];
 	            end
 	    end
-
 endmodule
 	
