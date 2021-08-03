@@ -9,11 +9,11 @@ counter:
 	PYTHONOPTIMIZE=${NOASSERT} MODULE=test_counter vvp -M $$(cocotb-config --prefix)/cocotb/libs -m libcocotbvpi_icarus  bin/counter.vvp
 	! grep failure results.xml
 
-show_counter:
+show_graph:
 	gtkwave counter.vcd
 
-show_synth_%: src/%.v
-	yosys -p "read_verilog $<; proc; opt; show -colors 2 -width -signed"
+synth_counter:
+	yosys -p "read_verilog src/counter.v; proc; opt; show -colors 2 -width -signed"
 
 clean:
 	rm -rf bin/

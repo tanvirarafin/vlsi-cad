@@ -3,7 +3,7 @@
 cd /home/$USER
 
 sudo apt-get install -y vim tcsh csh tcl-dev tk-dev libcairo2-dev git
-sudo apt install -y ngspice klayout python3-pip gtkwave
+sudo apt install -y ngspice klayout python3-pip gtkwave xdot
 sudo apt install -y docker.io
 sudo apt install -y autoconf flex bison gperf
 sudo snap install clion --classic
