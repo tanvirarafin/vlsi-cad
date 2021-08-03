@@ -2,6 +2,7 @@
 *vcd
 *log
 *bin
+bin
+.idea
 __pycache__
-sim_build
 results.xml
