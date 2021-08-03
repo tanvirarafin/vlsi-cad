@@ -14,7 +14,7 @@ show_graph:
 	gtkwave example_3_full_adder_8bit.vcd
 
 synth:
-	yosys -p "read_verilog src/example_3_full_adder_8bit.v\; proc\; opt\; show -colors 2 -width -signed"
+	yosys -p "read_verilog src/example_3_full_adder_8bit.v ; proc ; opt ; show -colors 2 -width -signed"
 
 clean:
 	rm -rf bin/
