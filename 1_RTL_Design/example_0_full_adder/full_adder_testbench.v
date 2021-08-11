@@ -11,9 +11,10 @@ module full_adder_testbench;
             #0 b = 0;
             #0 carry_in = 0;
             #10 a  = 1;
+            #15 carry_in = 1;
             #20 b  = 1;
-            #20 carry_in = 1;
-            #20 $stop;
+            #25 carry_in = 1;
+            #30 $stop;
             $finish ;
         end
     full_adder_dataflow adder1(sum, carry_out, a, b, carry_in);

@@ -32,7 +32,7 @@ clean:
 .PHONY: clean
 
 	">> $1/Makefile
-	echo "\`timescale 1ns/1ns
+	echo "\`timescale 1ns/1ps
 module $1;
 endmodule
 	" >> $1/src/$1.v

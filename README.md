@@ -1,5 +1,4 @@
 # vlsi-cad
-
 This repository contains basic scripts to install open source CAD tools.
 
 ## Steps to install the tools in your VM
