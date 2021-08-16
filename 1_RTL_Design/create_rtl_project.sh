@@ -22,7 +22,7 @@ show_graph:
 \tgtkwave $1.vcd
 
 synth:
-\tyosys -p \"read_verilog src/$1.v; proc; opt; show -colors 2 -width -signed\"
+\tyosys -p \"read_verilog -sv src/$1.sv; proc; opt; show -colors 2 -width -signed\"
 
 clean:
 \trm -rf bin/

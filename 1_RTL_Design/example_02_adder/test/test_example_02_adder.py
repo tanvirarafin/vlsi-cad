@@ -18,7 +18,7 @@ async def adder_basic_test(dut):
 
 
 @cocotb.test()
-async def mux_randomised_test(dut):
+async def adder_randomised_test(dut):
     for i in range(1000):
         a = random.randint(0, 2147483647)
         b = random.randint(0, 2147483647)
