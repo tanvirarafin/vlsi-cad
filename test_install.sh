@@ -2,7 +2,7 @@
 
 echo "Run this script after restarting your vitrutal machine"
 
-cd /home/$USER
+cd ~/
 
 
 # run the following two line after you restart your computer
@@ -14,11 +14,11 @@ echo "************* Did the project ended without any fatal error**********\n"
 echo "*******************Checking magic************************************\n"
 echo "****Close the magic and ngspice windows after you see the result*****\n"
 
-cd /home/$USER
+cd ~/
 cd magic-inverter
 make magic
 make sim
-cd /home/$USER
+cd ~/
 
 
 riscv64-unknown-elf-gcc
