@@ -1,0 +1,9 @@
+* NGSPICE file created from inverter.ext - technology: sky130A
+
+
+* Top level circuit inverter
+
+X0 out in gnd gnd sky130_fd_pr__nfet_01v8 ad=6.048e+11p pd=3.12e+06u as=7.728e+11p ps=3.52e+06u w=420000u l=160000u
+X1 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=1.224e+12p pd=4.52e+06u as=1.1152e+12p ps=4.36e+06u w=680000u l=150000u
+.end
+
