@@ -1,0 +1,10 @@
+Example circuit
+v1 n1 0 PULSE(0 5 1m 1m 1m 10m 20m)
+R1 n1 n2 10k
+C1 n2 0  1u
+.tran 0.1m 20m
+.control
+run
+plot v(n1) v(n2)
+.endc
+.end

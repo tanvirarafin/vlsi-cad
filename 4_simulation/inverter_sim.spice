@@ -1,0 +1,32 @@
+* NGSPICE file created from inverter.ext - technology: sky130A
+* include statements
+.lib "./sky130_fd_pr/models/sky130.lib.spice" tt
+
+*.option scale=0.01u
+* power supply
+vdd vdd 0 1.8
+
+
+* voltage inputs
+v1  in  0 PULSE(1.8 0 1n 1n 1n 20n 40n)
+
+* Top level circuit inverter
+
+
+X0 out in gnd gnd sky130_fd_pr__nfet_01v8 ad=1.512e+11p pd=1.56e+06u as=1.974e+11p ps=1.78e+06u w=420000u l=150000u
+X1 out in vdd vdd sky130_fd_pr__pfet_01v8 ad=2.992e+11p pd=2.24e+06u as=2.856e+11p ps=2.2e+06u w=680000u l=150000u
+C0 in vdd 0.02fF
+C1 in out 0.03fF
+C2 out vdd 0.08fF
+C3 out gnd 0.21fF
+C4 in gnd 0.40fF
+C5 vdd gnd 0.90fF
+.tran 0.1n 100n 
+
+.control
+run
+plot v(in) v(out)
+.endc
+
+.end
+
