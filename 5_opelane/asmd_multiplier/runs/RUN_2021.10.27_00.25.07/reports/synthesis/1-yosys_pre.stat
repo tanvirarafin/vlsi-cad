@@ -1,0 +1,26 @@
+
+10. Printing statistics.
+
+=== asmd_multiplier ===
+
+   Number of wires:                101
+   Number of wire bits:            124
+   Number of public wires:          12
+   Number of public wire bits:      35
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                112
+     $_ANDNOT_                      38
+     $_AND_                          3
+     $_DFFE_PP0P_                   20
+     $_DFF_PP0_                      1
+     $_MUX_                          8
+     $_NAND_                         7
+     $_NOR_                          6
+     $_NOT_                          6
+     $_ORNOT_                        2
+     $_OR_                           6
+     $_XNOR_                         3
+     $_XOR_                         12
+

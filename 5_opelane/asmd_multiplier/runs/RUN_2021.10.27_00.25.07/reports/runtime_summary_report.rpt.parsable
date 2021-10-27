@@ -1,0 +1,11 @@
+0-prep 3.265
+1-opensta 1.8399999999999999
+1-yosys 1.457
+3-verilog2def_openroad 1.9100000000000001
+4-ioPlacer 1.483
+5-tapcell 1.4849999999999999
+7-pdn 1.884
+8-replace 2.143
+8-resizer_design_optimization 2.25
+9-write_verilog 1.505
+9-resizer_design_optimization_sta 1.814

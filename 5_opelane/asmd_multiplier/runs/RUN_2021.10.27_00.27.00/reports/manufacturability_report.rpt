@@ -1,0 +1,19 @@
+Design Name: asmd_multiplier
+Run Directory: /openlane/designs/asmd_multiplier/runs/RUN_2021.10.27_00.27.00
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/asmd_multiplier/runs/RUN_2021.10.27_00.27.00/reports/magic/36-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/asmd_multiplier/runs/RUN_2021.10.27_00.27.00/results/lvs/asmd_multiplier.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/asmd_multiplier/runs/RUN_2021.10.27_00.27.00/reports/routing/38-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

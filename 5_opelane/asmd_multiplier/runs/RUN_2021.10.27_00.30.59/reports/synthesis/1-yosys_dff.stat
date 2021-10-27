@@ -1,0 +1,26 @@
+
+21. Printing statistics.
+
+=== asmd_multiplier ===
+
+   Number of wires:                174
+   Number of wire bits:            197
+   Number of public wires:          12
+   Number of public wire bits:      35
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                153
+     $_ANDNOT_                      38
+     $_AND_                          3
+     $_MUX_                         20
+     $_NAND_                         7
+     $_NOR_                          6
+     $_NOT_                         27
+     $_ORNOT_                        2
+     $_OR_                           6
+     $_XNOR_                         3
+     $_XOR_                         12
+     sky130_fd_sc_hd__dfrtp_2       21
+     sky130_fd_sc_hd__mux2_1         8
+

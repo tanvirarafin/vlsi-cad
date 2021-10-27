@@ -1,0 +1,13 @@
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module asmd_multiplier...
+Warning: Wire asmd_multiplier.\ready is used but has no driver.
+Warning: Wire asmd_multiplier.\product [7] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [6] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [5] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [4] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [3] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [2] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [1] is used but has no driver.
+Warning: Wire asmd_multiplier.\product [0] is used but has no driver.
+Found and reported 9 problems.

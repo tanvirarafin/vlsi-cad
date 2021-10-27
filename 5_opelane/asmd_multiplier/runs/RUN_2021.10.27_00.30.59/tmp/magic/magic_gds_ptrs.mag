@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 40000 40000
+string GDS_FILE /openlane/designs/asmd_multiplier/runs/RUN_2021.10.27_00.30.59/results/magic/asmd_multiplier.gds
+string GDS_END 980154
+string GDS_START 241122
+<< end >>

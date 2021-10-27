@@ -1,0 +1,256 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO asmd_multiplier
+  CLASS BLOCK ;
+  FOREIGN asmd_multiplier ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 81.250 BY 91.970 ;
+  PIN VGND
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 32.505 75.440 34.105 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 55.170 75.440 56.770 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 28.025 10.640 29.625 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 51.330 10.640 52.930 79.120 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 21.175 75.440 22.775 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 43.840 75.440 45.440 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 66.505 75.440 68.105 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 16.375 10.640 17.975 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 39.680 10.640 41.280 79.120 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 62.985 10.640 64.585 79.120 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 77.250 6.840 81.250 7.440 ;
+    END
+  END clk
+  PIN product[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.130 87.970 80.410 91.970 ;
+    END
+  END product[0]
+  PIN product[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.610 87.970 51.890 91.970 ;
+    END
+  END product[1]
+  PIN product[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.610 0.000 28.890 4.000 ;
+    END
+  END product[2]
+  PIN product[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 77.250 70.760 81.250 71.360 ;
+    END
+  END product[3]
+  PIN product[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 71.850 0.000 72.130 4.000 ;
+    END
+  END product[4]
+  PIN product[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 84.360 4.000 84.960 ;
+    END
+  END product[5]
+  PIN product[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.810 87.970 38.090 91.970 ;
+    END
+  END product[6]
+  PIN product[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 4.000 ;
+    END
+  END product[7]
+  PIN ready
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 87.970 23.370 91.970 ;
+    END
+  END ready
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.130 0.000 57.410 4.000 ;
+    END
+  END reset
+  PIN start
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 0.000 14.170 4.000 ;
+    END
+  END start
+  PIN word0[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 20.440 4.000 21.040 ;
+    END
+  END word0[0]
+  PIN word0[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 77.250 49.000 81.250 49.600 ;
+    END
+  END word0[1]
+  PIN word0[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 42.200 4.000 42.800 ;
+    END
+  END word0[2]
+  PIN word0[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 66.330 87.970 66.610 91.970 ;
+    END
+  END word0[3]
+  PIN word1[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 42.410 0.000 42.690 4.000 ;
+    END
+  END word1[0]
+  PIN word1[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 62.600 4.000 63.200 ;
+    END
+  END word1[1]
+  PIN word1[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 8.370 87.970 8.650 91.970 ;
+    END
+  END word1[2]
+  PIN word1[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 77.250 28.600 81.250 29.200 ;
+    END
+  END word1[3]
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 78.055 78.965 ;
+      LAYER met1 ;
+        RECT 0.070 10.640 80.430 79.120 ;
+      LAYER met2 ;
+        RECT 0.100 87.690 8.090 88.130 ;
+        RECT 8.930 87.690 22.810 88.130 ;
+        RECT 23.650 87.690 37.530 88.130 ;
+        RECT 38.370 87.690 51.330 88.130 ;
+        RECT 52.170 87.690 66.050 88.130 ;
+        RECT 66.890 87.690 79.850 88.130 ;
+        RECT 0.100 4.280 80.400 87.690 ;
+        RECT 0.650 3.670 13.610 4.280 ;
+        RECT 14.450 3.670 28.330 4.280 ;
+        RECT 29.170 3.670 42.130 4.280 ;
+        RECT 42.970 3.670 56.850 4.280 ;
+        RECT 57.690 3.670 71.570 4.280 ;
+        RECT 72.410 3.670 80.400 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 83.960 77.250 84.825 ;
+        RECT 4.000 71.760 77.250 83.960 ;
+        RECT 4.000 70.360 76.850 71.760 ;
+        RECT 4.000 63.600 77.250 70.360 ;
+        RECT 4.400 62.200 77.250 63.600 ;
+        RECT 4.000 50.000 77.250 62.200 ;
+        RECT 4.000 48.600 76.850 50.000 ;
+        RECT 4.000 43.200 77.250 48.600 ;
+        RECT 4.400 41.800 77.250 43.200 ;
+        RECT 4.000 29.600 77.250 41.800 ;
+        RECT 4.000 28.200 76.850 29.600 ;
+        RECT 4.000 21.440 77.250 28.200 ;
+        RECT 4.400 20.040 77.250 21.440 ;
+        RECT 4.000 7.840 77.250 20.040 ;
+        RECT 4.000 6.975 76.850 7.840 ;
+  END
+END asmd_multiplier
+END LIBRARY
+

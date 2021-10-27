@@ -1,0 +1,7 @@
+0-prep 0h0m3s313ms
+1-opensta 0h0m1s855ms
+1-yosys 0h0m1s268ms
+3-verilog2def_openroad 0h0m1s904ms
+4-ioPlacer 0h0m1s526ms
+5-tapcell 0h0m1s455ms
+7-pdn 0h0m1s865ms
