@@ -1,83 +1,80 @@
 #!/bin/bash
 
-cd ~/
+cd ~
 
-sudo apt-get install -y vim tcsh csh tcl-dev tk-dev libcairo2-dev git
-sudo apt install -y ngspice klayout python3-pip gtkwave xdot
-sudo apt install -y docker.io
-sudo apt install -y autoconf flex bison gperf
-sudo snap install clion --classic
-git clone https://github.com/The-OpenROAD-Project/OpenLane.git
-
+sudo apt-get install vim git -y
+sudo apt-get install tcsh csh tcl-dev tk-dev libcairo2-dev -y
 git clone git://opencircuitdesign.com/magic
-git clone https://github.com/efabless/caravel_user_project.git
-
-git clone --recursive https://github.com/mattvenn/magic-inverter.git
-
-wget https://github.com/steveicarus/iverilog/archive/refs/tags/v11_0.tar.gz
-wget https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz
-wget https://github.com/YosysHQ/fpga-toolchain/releases/download/nightly-20210802/fpga-toolchain-linux_x86_64-nightly-20210802.tar.gz
-
-
-#install magic
 cd magic
-git checkout 8.3.160
+git checkout 8.3.209
 ./configure
 make
 sudo make install
 
-cd ~/
+sudo apt install docker.io
 
-#post-installation steps for docker
-sudo groupadd docker
-sudo usermod -aG docker $USER
-
-cd ~/
-cd OpenLane/
-make openlane
-make pdk        # build pdk
-
-cd ~/
-#install caravel
+cd ~
+git clone https://github.com/efabless/caravel_user_project.git
 export PDK_ROOT=$(pwd)/pdk
-export OPENLANE_ROOT=$(pwd)/OpenLane
-export OPENLANE_TAG=v0.15
+export OPENLANE_ROOT=$(pwd)/openlane
+export SKYWATER_COMMIT=c094b6e83a4f9298e47f696ec5a7fd53535ec5eb
+export OPEN_PDKS_COMMIT=14db32aa8ba330e88632ff3ad2ff52f4f4dae1ad
+export OPENLANE_TAG=mpw-3a
+export OPENLANE_IMAGE_NAME=efabless/openlane:$OPENLANE_TAG
+
 
 cd caravel_user_project
-git checkout mpw-two-c
+git checkout mpw-3
 export CARAVEL_ROOT=$(pwd)/caravel
-make install
 
-cd ~/
+make install		# install caravel
 
-tar xf v11_0.tar.gz
-cd iverilog-11_0/
-autoconf
-./configure
-make
-sudo make install
+cd caravel
+git checkout 5712871d27c08900d18edc72a7f534cc8be1b2dd
+cd ..
 
+make pdk    		# build pdk (can only utilise a single core atm)
+make openlane     # build openlane
+sudo chmod 666 /var/run/docker.sock
+make user_proj_example
 
-cd ~/
+cd ~
+sudo apt install ngspice
+git clone --recursive https://github.com/mattvenn/magic-inverter.git
 
+cd ~
+sudo apt install klayout
+
+wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2021-09-29/oss-cad-suite-linux-x64-20210929.tgz 
+tar -xzf ~/oss-cad-suite-linux-x64-20210929.tgz
+sudo apt install python3-pip
 pip3 install cocotb
 
-tar xf fpga-toolchain-linux_x86_64-nightly-20210802.tar.gz
+cd ~
+wget https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz 
 
-tar xf  riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz
+tar -xzf ~/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14.tar.gz
 
 
 echo "
-install_dir=~/caravel_user_project/
-export PDK_ROOT=~/pdk
+install_dir=~
+export PDK_ROOT=\$install_dir/pdk
+export OPENLANE_ROOT=\$install_dir/openlane
 export PDK_PATH=\$PDK_ROOT/sky130A
-export PDKPATH=\$PDK_ROOT/sky130A
-export OPENLANE_ROOT=~/OpenLane
-export OPENLANE_TAG=v0.15
+export SKYWATER_COMMIT=c094b6e83a4f9298e47f696ec5a7fd53535ec5eb
+export OPEN_PDKS_COMMIT=14db32aa8ba330e88632ff3ad2ff52f4f4dae1ad
+export OPENLANE_TAG=mpw-3a
+export OPENLANE_IMAGE_NAME=efabless/openlane:\$OPENLANE_TAG
+export IMAGE_NAME=\$OPENLANE_IMAGE_NAME
 export CARAVEL_ROOT=\$install_dir/caravel_user_project/caravel
-export PATH=\$PATH:~/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin 
-export PATH=\$PATH:~/fpga-toolchain/bin
+export PATH=\$PATH:\$install_dir/oss-cad-suite/bin
+export PATH=\$PATH:\$install_dir/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-linux-ubuntu14/bin
+export PATH=\$PATH:\$install_dir/.local/bin
+
 " >> ~/.bashrc
+
+source ~/.bashrc
+
 
 echo "****************Installation complete ***************************"
 echo "***********Please restart your computer now**********************"
