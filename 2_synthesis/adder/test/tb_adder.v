@@ -9,7 +9,7 @@ module tb_adder;
                $dumpvars(0, tb_adder);
 	       #0 a=4'b0000;
 	       #0 b=4'b0001;
-               #100 $finish;
+               #200 $finish;
         end
 	always #10 a=a+1;
 	always #20 b=b*2;
