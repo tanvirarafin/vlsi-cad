@@ -1,0 +1,47 @@
+from gds3xtrude.include import layer, Material
+
+# Define layers
+nwell = layer(64, 20)
+diff = layer (65, 20)
+poly = layer(66, 20)
+licon= layer(66, 44)
+li1 = layer(67, 20)
+mcon = layer(67, 44)
+met1 = layer(68, 20)
+
+# Define materials and colors
+m_licon = Material('licon', color=(0.5, 0.5, 0.5))
+m_ptran = Material('ptran', color=(0.2, 0.8, 0.2))
+m_ntran = Material('ntran', color=(0.8, 0.2, 0.0))
+m_poly  = Material('poly',  color=(0.3, 0.6, 0.6))
+m_li1   = Material('li1',   color=(0.6, 0.3, 0.6))
+m_mcon  = Material('mcon',  color=(0.5, 0.5, 0.5))
+m_met1  = Material('met1',  color=(0.6, 0.6, 0.3))
+
+# Define additional layers from boolean operation
+contact_to_silicon = licon - poly
+ptran = diff - nwell
+ntran = diff & nwell
+
+# Assign materials
+ptran.material = m_ptran
+ntran.material = m_ntran
+contact_to_silicon.material = m_licon
+poly.material = m_poly
+licon.material = m_licon
+li1.material = m_li1
+mcon.material = m_mcon
+met1.material = m_met1
+
+
+# Define layer stack structure as a list of (layer thickness, [masks, ...]).
+# The 3D model is created layer by layer from bottom to top.
+layerstack = [
+    (120, [ptran, ntran]),
+    (80, contact_to_silicon),
+    (180, [licon, poly]),
+    (430, licon),
+    (100, li1),
+    (270, mcon),
+    (200, met1),
+]
