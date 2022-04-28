@@ -26,11 +26,9 @@ module wb_adder #(
     reg [7:0] result;
     reg [7:0]a;
     reg [7:0]b;
+    adder adder_0(.a(a), .b(b), .result(result));
 
     assign o_wb_stall = 0;
-    initial result = 8'b0;
-    initial a = 8'b0;
-    initial b = 8'b0;
 
     // taking input
     always @(posedge clk) begin
@@ -52,7 +50,7 @@ module wb_adder #(
                     INPUT_ADDRESS:
                         o_wb_data <= {b,a};
                     OUTPUT_ADDRESS:
-                        o_wb_data <= a+b;
+                        o_wb_data <= result;
                     default:
                         o_wb_data <= 32'b0;
                 endcase
@@ -66,4 +64,11 @@ module wb_adder #(
             // return ack immediately
             o_wb_ack <= (i_wb_stb && !o_wb_stall && (i_wb_addr == OUTPUT_ADDRESS || i_wb_addr == INPUT_ADDRESS));
     end
+endmodule
+
+module adder(
+    output [7:0] result,
+    input [7:0] a,b
+);
+    assign result = a+b;
 endmodule
