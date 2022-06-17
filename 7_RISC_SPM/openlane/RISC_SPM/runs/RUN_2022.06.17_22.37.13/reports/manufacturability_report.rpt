@@ -1,0 +1,19 @@
+Design Name: RISC_SPM
+Run Directory: /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/reports/magic/36-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/results/lvs/RISC_SPM.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/reports/routing/38-antenna.rpt
+Number of pins violated: 20
+Number of nets violated: 17

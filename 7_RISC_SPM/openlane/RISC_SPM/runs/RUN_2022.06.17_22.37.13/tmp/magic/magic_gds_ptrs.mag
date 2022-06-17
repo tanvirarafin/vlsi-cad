@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 99723 101867
+string GDS_FILE /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/results/magic/RISC_SPM.gds
+string GDS_END 31857044
+string GDS_START 559602
+<< end >>

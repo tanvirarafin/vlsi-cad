@@ -1,0 +1,28 @@
+
+21. Printing statistics.
+
+=== RISC_SPM ===
+
+   Number of wires:              21453
+   Number of wire bits:          23335
+   Number of public wires:         282
+   Number of public wire bits:    2164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8748
+     $_ANDNOT_                     657
+     $_AND_                          6
+     $_MUX_                       2113
+     $_NAND_                        29
+     $_NOR_                         35
+     $_NOT_                         28
+     $_ORNOT_                       55
+     $_OR_                         888
+     $_XNOR_                         2
+     $_XOR_                         27
+     sky130_fd_sc_hd__dfrtp_2       69
+     sky130_fd_sc_hd__dfxtp_2     2048
+     sky130_fd_sc_hd__mux2_1      2111
+     sky130_fd_sc_hd__mux4_1       680
+

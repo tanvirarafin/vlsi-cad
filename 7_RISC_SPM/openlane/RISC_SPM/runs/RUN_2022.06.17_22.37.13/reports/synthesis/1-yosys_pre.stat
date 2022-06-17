@@ -1,0 +1,27 @@
+
+10. Printing statistics.
+
+=== RISC_SPM ===
+
+   Number of wires:               6132
+   Number of wire bits:           8014
+   Number of public wires:         282
+   Number of public wire bits:    2164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               7995
+     $_ANDNOT_                     657
+     $_AND_                          6
+     $_DFFE_PN0P_                   65
+     $_DFFE_PP_                   2048
+     $_DFF_PN0_                      4
+     $_MUX_                       4151
+     $_NAND_                        29
+     $_NOR_                         35
+     $_NOT_                         28
+     $_ORNOT_                       55
+     $_OR_                         888
+     $_XNOR_                         2
+     $_XOR_                         27
+

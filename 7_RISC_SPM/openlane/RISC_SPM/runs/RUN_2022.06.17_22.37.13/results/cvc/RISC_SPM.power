@@ -1,0 +1,8 @@
+VPWR power 1.8
+VGND power 0.0
+#define std_input min@VGND max@VPWR
+clk input std_input
+ext_write input std_input
+rst input std_input
+address_bus[7:0] input std_input
+data_bus[7:0] input std_input

@@ -1,0 +1,1 @@
+lvs {/openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/results/magic/RISC_SPM.spice RISC_SPM} {/openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/results/lvs/RISC_SPM.lvs.powered.v RISC_SPM} /home/vlsi/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/RISC_SPM/runs/RUN_2022.06.17_22.37.13/results/lvs/RISC_SPM.lvs.lef.log -json

@@ -1,0 +1,20 @@
+
+28. Executing CHECK pass (checking for obvious problems).
+Checking module RISC_SPM...
+Warning: Wire RISC_SPM.\memory_bus [7] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [6] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [5] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [4] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [3] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [2] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [1] is used but has no driver.
+Warning: Wire RISC_SPM.\memory_bus [0] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [7] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [6] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [5] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [4] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [3] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [2] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [1] is used but has no driver.
+Warning: Wire RISC_SPM.\instruction_bus [0] is used but has no driver.
+Found and reported 16 problems.
