@@ -1,9 +1,9 @@
 `timescale 1ns/1ps
 module tb_RISC_SPM#(parameter word_size=8)();
         reg rst;
-		wire clk;
-		reg write;
-		reg [8:0] k;
+	wire clk;
+	reg write;
+	reg [8:0] k;
         reg [word_size-1: 0] data_bus, address_bus;
         wire [word_size-1:0] memory_bus, instruction_bus;
 

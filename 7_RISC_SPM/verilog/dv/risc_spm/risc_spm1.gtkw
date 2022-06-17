@@ -1,0 +1,76 @@
+[*]
+[*] GTKWave Analyzer v3.3.111 (w)1999-2020 BSI
+[*] Fri Jun 17 21:21:04 2022
+[*]
+[dumpfile] "/home/zerotoasic/asic_tools/caravel_user_project/verilog/dv/risc_spm/RTL-risc_spm.vcd"
+[dumpfile_mtime] "Fri Jun 17 21:11:46 2022"
+[dumpfile_size] 485782
+[savefile] "/home/zerotoasic/asic_tools/caravel_user_project/verilog/dv/risc_spm/risc_spm1.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-27.778299 1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 297
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 157
+@28
+risc_spm_tb.power1
+risc_spm_tb.power2
+risc_spm_tb.power3
+risc_spm_tb.power4
+risc_spm_tb.RSTB
+risc_spm_tb.clock
+risc_spm_tb.flash_clk
+risc_spm_tb.flash_csb
+risc_spm_tb.flash_io0
+risc_spm_tb.flash_io1
+@800023
+risc_spm_tb.mprj_io[37:0]
+@29
+(0)risc_spm_tb.mprj_io[37:0]
+(1)risc_spm_tb.mprj_io[37:0]
+(2)risc_spm_tb.mprj_io[37:0]
+(3)risc_spm_tb.mprj_io[37:0]
+(4)risc_spm_tb.mprj_io[37:0]
+(5)risc_spm_tb.mprj_io[37:0]
+(6)risc_spm_tb.mprj_io[37:0]
+(7)risc_spm_tb.mprj_io[37:0]
+(8)risc_spm_tb.mprj_io[37:0]
+(9)risc_spm_tb.mprj_io[37:0]
+(10)risc_spm_tb.mprj_io[37:0]
+(11)risc_spm_tb.mprj_io[37:0]
+(12)risc_spm_tb.mprj_io[37:0]
+(13)risc_spm_tb.mprj_io[37:0]
+(14)risc_spm_tb.mprj_io[37:0]
+(15)risc_spm_tb.mprj_io[37:0]
+(16)risc_spm_tb.mprj_io[37:0]
+(17)risc_spm_tb.mprj_io[37:0]
+(18)risc_spm_tb.mprj_io[37:0]
+(19)risc_spm_tb.mprj_io[37:0]
+(20)risc_spm_tb.mprj_io[37:0]
+(21)risc_spm_tb.mprj_io[37:0]
+(22)risc_spm_tb.mprj_io[37:0]
+(23)risc_spm_tb.mprj_io[37:0]
+(24)risc_spm_tb.mprj_io[37:0]
+(25)risc_spm_tb.mprj_io[37:0]
+(26)risc_spm_tb.mprj_io[37:0]
+(27)risc_spm_tb.mprj_io[37:0]
+(28)risc_spm_tb.mprj_io[37:0]
+(29)risc_spm_tb.mprj_io[37:0]
+(30)risc_spm_tb.mprj_io[37:0]
+(31)risc_spm_tb.mprj_io[37:0]
+(32)risc_spm_tb.mprj_io[37:0]
+(33)risc_spm_tb.mprj_io[37:0]
+(34)risc_spm_tb.mprj_io[37:0]
+(35)risc_spm_tb.mprj_io[37:0]
+(36)risc_spm_tb.mprj_io[37:0]
+(37)risc_spm_tb.mprj_io[37:0]
+@1001201
+-group_end
+@22
+risc_spm_tb.mprj_io[37:0]
+risc_spm_tb.mprj_io[37:0]
+risc_spm_tb.mprj_io[37:0]
+[pattern_trace] 1
+[pattern_trace] 0
